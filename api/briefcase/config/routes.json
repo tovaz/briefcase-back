@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/briefcases",
+      "handler": "briefcase.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/briefcases/count",
+      "handler": "briefcase.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/briefcases/:id",
+      "handler": "briefcase.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/briefcases",
+      "handler": "briefcase.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/briefcases/:id",
+      "handler": "briefcase.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/briefcases/:id",
+      "handler": "briefcase.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

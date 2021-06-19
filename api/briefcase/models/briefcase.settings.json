@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "briefcases",
+  "info": {
+    "name": "briefcase"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "technologies": {
+      "via": "briefcases",
+      "collection": "technology"
+    }
+  }
+}

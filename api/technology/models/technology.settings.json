@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technologies",
+  "info": {
+    "name": "technology"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "level": {
+      "type": "integer"
+    },
+    "briefcases": {
+      "collection": "briefcase",
+      "via": "technologies",
+      "dominant": true
+    },
+    "blog": {
+      "via": "technologies",
+      "model": "blog"
+    }
+  }
+}
