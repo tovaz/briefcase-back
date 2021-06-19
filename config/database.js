@@ -5,11 +5,11 @@ module.exports = ({ env }) => ({
       connector: 'bookshelf',
       settings: {
         client: 'mysql',
-        host: env('DATABASE_HOST', 'clever-yonath.82-223-23-80.plesk.page'),
+        host: env('DATABASE_HOST'),
         port: env.int('DATABASE_PORT', 3306),
         database: env('DATABASE_NAME', 'briefcase'),
-        username: env('DATABASE_USERNAME', 'tovaz'),
-        password: env('DATABASE_PASSWORD', 'To34v@80z5200'),
+        username: env('DATABASE_USERNAME'),
+        password: env('DATABASE_PASSWORD'),
         ssl: env.bool('DATABASE_SSL', false),
       },
       options: {}
