@@ -22,7 +22,7 @@ module.exports = {
 
     async send(data){
         await strapi.plugins['email'].services.email.send({
-            to: data.email,
+            to: 'williamvaldez@outlook.com',
             from: 'info@williamvaldez.com',
             //cc: 'helenedarroze@strapi.io',
             //bcc: 'ghislainearabian@strapi.io',
