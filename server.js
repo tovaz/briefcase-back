@@ -1,6 +1,6 @@
 module.exports = ({ env }) => ({
     host: env('HOST', '0.0.0.0'),
-    url: env('URL', 'https://williamvaldez.clever-yonath.82-223-23-80.plesk.page/'),
+    url: env('URL', 'https://portafolioback.nuveapps.com/'),
     port: env.int('PORT', 1337),
     //proxy: env('PROXY', true),
     //NODE_ENV: 'development',
@@ -10,8 +10,7 @@ module.exports = ({ env }) => ({
       },
     },
   });
-  
+
   const strapi = require('strapi');
-  
+
   strapi().start();
-  
