@@ -646,9 +646,6 @@
               "title": {
                 "type": "string"
               },
-              "description": {
-                "type": "string"
-              },
               "technologies": {
                 "type": "array",
                 "items": {
@@ -663,6 +660,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "content": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
