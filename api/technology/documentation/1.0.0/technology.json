@@ -667,6 +667,9 @@
               "category": {
                 "type": "string"
               },
+              "shortContent": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },

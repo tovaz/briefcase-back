@@ -48,6 +48,9 @@
     },
     "category": {
       "model": "category"
+    },
+    "shortContent": {
+      "type": "richtext"
     }
   }
 }

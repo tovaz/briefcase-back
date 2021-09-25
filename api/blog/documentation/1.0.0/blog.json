@@ -730,6 +730,9 @@
               }
             }
           },
+          "shortContent": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -751,6 +754,9 @@
             "type": "string"
           },
           "category": {
+            "type": "string"
+          },
+          "shortContent": {
             "type": "string"
           },
           "published_at": {
