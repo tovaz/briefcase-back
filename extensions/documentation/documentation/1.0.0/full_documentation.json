@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/25/2021 7:19:50 PM"
+    "x-generation-date": "10/10/2021 12:22:06 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4949,8 +4949,11 @@
                     "type": "string"
                   }
                 },
-                "blog": {
-                  "type": "string"
+                "blogs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -5279,8 +5282,11 @@
                     "type": "string"
                   }
                 },
-                "blog": {
-                  "type": "string"
+                "blogs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -5600,49 +5606,52 @@
               }
             }
           },
-          "blog": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "technologies": {
-                "type": "array",
-                "items": {
+          "blogs": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "technologies": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "imageCover": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "content": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "shortContent": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "imageCover": {
-                "type": "string"
-              },
-              "images": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "content": {
-                "type": "string"
-              },
-              "category": {
-                "type": "string"
-              },
-              "shortContent": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -5666,8 +5675,11 @@
               "type": "string"
             }
           },
-          "blog": {
-            "type": "string"
+          "blogs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

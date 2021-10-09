@@ -34,9 +34,9 @@
       "via": "technologies",
       "dominant": true
     },
-    "blog": {
+    "blogs": {
       "via": "technologies",
-      "model": "blog"
+      "collection": "blog"
     }
   }
 }

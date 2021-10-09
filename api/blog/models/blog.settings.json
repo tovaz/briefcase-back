@@ -17,7 +17,8 @@
     },
     "technologies": {
       "collection": "technology",
-      "via": "blog"
+      "via": "blogs",
+      "dominant": true
     },
     "imageCover": {
       "model": "file",
